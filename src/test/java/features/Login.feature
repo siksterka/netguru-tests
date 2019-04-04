@@ -1,14 +1,14 @@
 Feature: Verify Login functionality
 
-  Scenario Outline: Verify user cannot login with not existing credentials
+  Scenario Outline: Verify user cannot login with invalid data
     Given user navigates to "http://trello.com"
     And user clicks login button
     When user enters username as "<username>"
     And user enters password as "<password>"
     And user clicks on Submit button
-    Then user sees error popup for username with message
-      |There isn't an account for this username|
+    Then user sees error popup
 
   Examples:
-  |username|password|
-  |example_not_123|Pass1234|
+    |username|password|
+    |not_user_nuNetguru|Pass1234|
+    |siksterkashop@gmail.com|notMyPassword|
