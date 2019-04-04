@@ -1,14 +1,25 @@
+# Intellij Idea project files
+.idea
+
+# gradle config
 .gradle
-/build/
 
-# Ignore Gradle GUI config
-gradle-app.setting
+# project binaries
+/build
+/out
+/classes
+/config
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+# test dirs
+/target
+*.yml
 
-# Cache of project
-.gradletasknamecache
+# mac os x
+.DS_Store
 
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
+# netbeans
+.nb-gradle
+.nb-gradle-properties
+
+# logs
+*.log
