@@ -9,7 +9,7 @@ Feature: Verify Sign Up functionality
     And user clicks on Sign Up button
     Then user sees error popup
 
-  Examples:
-    |username|password|email|
-    |newUser666|Pass1234|siksterkashop@gmail.com|
-    |newUser666|Pass|siksterkashop+newnu@gmail.com|
+    Examples:
+      | username   | password | email                         |
+      | newUser666 | Pass1234 | siksterkashop@gmail.com       |
+      | newUser666 | Pass     | siksterkashop+newnu@gmail.com |

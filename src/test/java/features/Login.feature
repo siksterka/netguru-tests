@@ -8,7 +8,7 @@ Feature: Verify Login functionality
     And user clicks on Submit button
     Then user sees error popup
 
-  Examples:
-    |username|password|
-    |not_user_nuNetguru|Pass1234|
-    |siksterkashop@gmail.com|notMyPassword|
+    Examples:
+      | username                | password      |
+      | not_user_nuNetguru      | Pass1234      |
+      | siksterkashop@gmail.com | notMyPassword |
